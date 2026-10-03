@@ -15,30 +15,25 @@
         tools:layout_editor_absoluteY="1dp">
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="226dp"
-            app:srcCompat="@drawable/hanu_scaled" />
+            android:layout_height="399dp"
+            app:srcCompat="@drawable/fittracker" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="78dp"
             android:text="Bienvenide a FitTrack"
             android:textAlignment="center"
             android:textSize="34sp"
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/Startbtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Iniciar sesión" />
+            android:text="Comenzar" />
 
-        <Button
-            android:id="@+id/Registrarsebtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Registrarse" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
