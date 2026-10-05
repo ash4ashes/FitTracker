@@ -14,12 +14,14 @@ public class EntrenamientoAdapter extends RecyclerView.Adapter<EntrenamientoAdap
     {
         private final TextView entrenamiento;
         private final TextView minutos;
+        private final TextView intensidad;
 
         public ViewHolder(View v)
         {
             super(v);
-            entrenamiento = v.findViewById(R.id.txt_nombre_entrenamiento);
-            minutos = v.findViewById(R.id.txt_minutos_entrenamiento);
+            entrenamiento = v.findViewById(R.id.Tipos_Entrenamiento);
+            minutos = v.findViewById(R.id.Minutos_Entrenamiento);
+            intensidad = v.findViewById(R.id.Intensidad_Entrenamiento);
         }
     }
 
@@ -39,6 +41,7 @@ public class EntrenamientoAdapter extends RecyclerView.Adapter<EntrenamientoAdap
         EntrenamientoModel entrenamientoActual = datos.get(posicion_actual);
         viewHolder.entrenamiento.setText(entrenamientoActual.ENTRENAMIENTO);
         viewHolder.minutos.setText(entrenamientoActual.MINUTOS);
+        viewHolder.intensidad.setText(entrenamientoActual.INTENSIDAD);
     }
     @Override
     public int getItemCount() {return datos.size();}

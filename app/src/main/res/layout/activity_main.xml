@@ -30,7 +30,7 @@
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/Startbtn"
+            android:id="@+id/Comenzar_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Comenzar" />

@@ -1,6 +1,8 @@
 package com.example.fittracker;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +11,9 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
+
+    Button boton_spiner;
+    Button recycler_btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,5 +25,10 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        boton_spiner = findViewById(R.id.Comenzar_btn);
+        boton_spiner.setOnClickListener(view ->
+                startActivity( new Intent(MainActivity.this, SpinnerActivity.class) )
+        );
     }
 }

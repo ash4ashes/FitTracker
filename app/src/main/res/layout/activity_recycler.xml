@@ -7,6 +7,7 @@
     android:layout_height="match_parent">
 
     <LinearLayout
+        android:id="@+id/Spinner_btn"
         android:layout_width="409dp"
         android:layout_height="729dp"
         android:orientation="vertical"
@@ -15,40 +16,36 @@
         tools:ignore="MissingConstraints">
 
         <TextView
-            android:id="@+id/Entrenamiento_Spinner"
+            android:id="@+id/Ejercicios_Recycler"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="¿Qué ejercicio elegirás hoy?"
-            android:textSize="34sp" />
+            android:text="¡Lo lograste!"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="48sp" />
 
         <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="match_parent"
-            android:layout_height="187dp"
-            app:srcCompat="@drawable/hanu_scaled" />
-
-        <RadioButton
-            android:id="@+id/Yoga_Spinner_btn"
+            android:id="@+id/imageView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Yoga" />
+            app:srcCompat="@drawable/main" />
 
-        <RadioButton
-            android:id="@+id/Calistenia_Spinner_btn"
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Calistenia" />
+            android:layout_height="49dp" />
 
-        <RadioButton
-            android:id="@+id/Cardio_Spinner_btn"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_entrenamiento"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Cardio" />
+            android:layout_height="0dp"
+            android:layout_weight="1" />
 
-        <RadioButton
-            android:id="@+id/Fuerza_Spinner_btn"
+        <Button
+            android:id="@+id/Recycler_btn"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Fuerza" />
+            android:layout_height="72dp"
+            android:text="Siguiente" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
